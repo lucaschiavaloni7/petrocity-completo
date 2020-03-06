@@ -1,0 +1,45 @@
+html, body {
+    height: 100%;
+}
+
+@media (min-width: 60em) {
+    html, body {
+        overflow: hidden;
+    }
+}
+
+/* Alerações para o form interessado */
+
+.card-input-mask {
+    background-color: #CFDAE7 !important;
+    border-color: #212A35 !important;
+    width: 90% !important;
+}
+
+.card-input-select {
+    text-align: left;
+    width: 90% !important;
+    border-color: #212A35 !important;
+}
+
+.ui-dropdown-label {
+    background-color: #CFDAE7 !important;
+    color: #5c5c5c !important;
+}
+
+.ui-card {
+    margin-left: 10% !important;
+    width: 80% !important;
+    border-radius: 20px !important;
+    opacity: 0.90;
+}
+
+/* Fim das alterações */
+
+.ngx-pagination {
+    font-size: 13px !important;
+}
+
+.ngx-pagination .current {
+    background-color: #212A35 !important;
+}

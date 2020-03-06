@@ -1,0 +1,46 @@
+.body-form {
+    height: 100%;
+    margin-top: -16px;
+    background-image: url('../../assets/images/petrocity.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card-body {
+    text-align: center;
+    padding: 40px;
+}
+
+.card-title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    color: #212A35;
+    margin-bottom: 15px;
+}
+
+.card-input {
+    margin-bottom: 5px;
+}
+
+.input-form {
+    width: 90%;
+    border-color: #212A35;
+    background-color: #CFDAE7;
+}
+
+.send-button {
+    border: none;
+    border-radius: 5px;
+    background-color: #212A35;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 20px;
+    color: #FFF;
+}
+
+@media (min-width: 65em) {
+    .card-input {
+        margin-bottom: 15px;
+    }
+}

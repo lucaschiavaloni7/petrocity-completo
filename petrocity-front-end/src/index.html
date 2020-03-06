@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <title>PetrocityDashboard</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+  <app-root></app-root>
+
+  <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+  
+  <script>
+    var options = {
+      onKeyPress: function (cpf, ev, el, op) {
+        var masks = ['000.000.000-000', '00.000.000/0000-00'];
+        $('.cpfOrCnpj').mask((cpf.length > 14) ? masks[1] : masks[0], op);
+      }
+    }
+
+    $('.cpfOrCnpj').length > 11 ? $('.cpfOrCnpj').mask('00.000.000/0000-00', options) : $('.cpfOrCnpj').mask('000.000.000-00#', options);
+
+  </script>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar').toggleClass('active');
+      });
+    });
+  </script>
+</body>
+
+</html>

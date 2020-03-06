@@ -1,0 +1,46 @@
+<div>
+    <app-navbar></app-navbar>
+
+    <div class="body-form">
+        <div class="container">
+            <div class="row">
+                <div class="ui-sm-0 ui-md-2 ui-lg-6 ui-xl-7"></div>
+                <div class="ui-sm-12 ui-md-10 ui-lg-6 ui-xl-5">
+                    <p-card class="card-body">
+                        <p class="card-title">SOLICITE UMA PROPOSTA</p>
+                        <div class="card-input">
+                            <input id="name" type="text" class="input-form" placeholder="Nome"
+                                [(ngModel)]="interested.name" [required]=true pInputText />
+                        </div>
+                        <div class="card-input">
+                            <input id="email" type="text" class="input-form" placeholder="E-mail"
+                                [(ngModel)]="interested.email" pInputText />
+                        </div>
+                        <div class="card-input">
+                            <p-inputMask inputId="telephone" [styleClass]="'card-input-mask'" mask="(99)99999-9999"
+                                placeholder="Telefone" [autoClear]="false" [(ngModel)]="interested.phoneNumber">
+                            </p-inputMask>
+                        </div>
+                        <div class="card-input">
+                            <input id="federalRegistration" type="text" class="input-form cpfOrCnpj"
+                                placeholder="CPF/CNPJ" [(ngModel)]="interested.federalRegistration" pInputText />
+                        </div>
+                        <div class="card-input">
+                            <p-dropdown inputId="states" [styleClass]="'card-input-select'" [options]="statesObj"
+                                [(ngModel)]="stateObj" optionLabel="name" placeholder="Estado"
+                                (onChange)="getListCitys()">
+                            </p-dropdown>
+                        </div>
+                        <div class="card-input">
+                            <p-dropdown id="cities" [styleClass]="'card-input-select'" [options]="citiesObj"
+                                [(ngModel)]="cityObj" optionLabel="name" placeholder="Cidade" (onChange)="selectCity()">
+                            </p-dropdown>
+                        </div>
+                        <button (click)="onSubmit()" class="send-button">Enviar</button>
+
+                    </p-card>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

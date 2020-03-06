@@ -1,0 +1,23 @@
+.principal-body{
+    height: 100%;
+}
+.body-form {
+    height: 100%;
+    margin-top: -16px;
+    background-image: url('../../../assets/images/petrocity.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card{
+    border: none;
+    border-radius: 20px;
+    opacity: 0.90;
+}
+
+.card-body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    color: #212A35;
+}

@@ -1,0 +1,37 @@
+.field-body {
+    margin-top: -20px;
+    background-color: #FFF;
+    border-radius: 10px;
+}
+
+.field-legend {
+    padding: 10px;
+    background-color: #212A35;
+    color: #FFF;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.table-title th{
+    padding: 5px;
+}
+
+.table-body {
+    font-size: 13px;
+}
+
+.table-body td{
+    padding: 7px;
+}
+
+.link-vizualization {
+    color: #000;
+}
+
+.link-vizualization span{
+    margin: 10px;
+}
+
+.pagination{
+    align-items: center;
+}
